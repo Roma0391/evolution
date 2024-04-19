@@ -1,0 +1,166 @@
+* {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Noto Serif Malayalam", serif;
+}
+
+.leftSott, .rightSott {
+    position: absolute;
+    top: 0;
+}
+
+.rightSott {
+    right: 0;
+    z-index: 1;
+    mix-blend-mode: multiply;
+}
+
+.leftSott {
+    left: 0;
+    z-index: 1;
+    mix-blend-mode: multiply;
+}
+
+.main {
+    position: relative;
+    padding-top: 242px;
+    height: 1080px;
+    background: linear-gradient(252.01deg, #B899BA -5.05%, #834D87 52.52%, #4E0053 100.57%);
+}
+
+.wrapper {
+    width: 1095px;
+    margin: 0 auto;
+}
+.header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 91px 124px 0 124px;
+    z-index: 1;
+}
+.nav ul {
+    display: flex;
+}
+.nav__item {
+    margin-right: 58px;
+    list-style-type: none;
+}
+.nav__item:last-child {
+    margin-right: 0;
+}
+.nav__item a {
+    /* font-family: "Noto Serif Malayalam", serif; */
+    /*Нажаль закоментований шрифт не підтримує російської мови, наскільки мені відомо...*/
+    font-family: 'Noto Serif';
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 42px;
+    line-height: 52px;
+    background: linear-gradient(89.49deg, #F0BF48 11.63%, #F5D27F 53.07%, #F0BF48 103.85%);
+    background-clip: text;
+	-webkit-text-fill-color: transparent; 
+    text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.4);
+}
+.nav__item a.active {
+    background: none;
+    background-clip: none;
+    -webkit-text-fill-color: wheat;
+    color: wheat;
+}
+
+.main__logo {
+    width: 550px;
+    margin: 0 auto;
+    display: flex;
+    position: relative;
+}
+
+.img__wrapper::before {
+    content: 'i';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Noto Serif';
+    font-weight: 600;
+    font-size: 84px;
+    line-height: 216px;
+    background: linear-gradient(178.46deg, #F0BF48 1.31%, #F9E5B6 42.73%, #F2C05E 77.32%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.3), 0px 0px 15px #F5D280;
+}
+
+.main__logo_text {
+    margin-left: 12px;
+    font-family: 'Noto Serif';
+    font-weight: 600;
+    font-size: 115px;
+    line-height: 216px;
+    background: linear-gradient(178.46deg, #F0BF48 1.31%, #F9E5B6 42.73%, #F2C05E 77.32%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.3), 0px 0px 15px #F5D280;
+}
+
+.main__description {
+    height: 250px;
+    margin-top: 56px;
+    padding-top: 54px;
+    background: linear-gradient(90.07deg, rgba(217, 217, 217, 0.5) 0.07%, rgba(217, 217, 217, 0) 104.32%);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 30px;
+}
+
+.main__description h1 {
+    text-align: center;
+    font-family: 'Noto Serif';
+    /* font-family: 'Noto Serif Malayalam'; */
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 62px;
+    background: linear-gradient(89.49deg, #F0BF48 11.63%, #F5D27F 53.07%, #F0BF48 103.85%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.4);
+}
+
+.main__description h2 {
+    margin-top: 12px;
+    font-family: "Montserrat", serif;
+    text-align: center;
+    font-weight: 400;
+    font-size: 43px;
+    line-height: 52px;
+    background: linear-gradient(89.49deg, #F0BF48 11.63%, #F5D27F 53.07%, #F0BF48 103.85%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.4);
+}
+
+.main__btns {
+    z-index: 2;
+    margin-top: 96px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main__btn {
+    width: 372px;
+    height: 99px;
+    background: linear-gradient(80.74deg, #A88632 -2.36%, #FEF9ED 75.94%, #F5D27F 96.02%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    font-family: 'Noto Serif';
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 41px;
+    color: #231F20;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border: none;
+    cursor: pointer;
+}
